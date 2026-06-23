@@ -3,11 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ master ]
-  # 添加手动触发选项
   workflow_dispatch:
-  # 添加定时触发（每天 UTC 时间 0 点）
-  schedule:
-    - cron: '0 0 * * *'
 
 jobs:
   deploy:

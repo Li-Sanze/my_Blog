@@ -4,8 +4,11 @@
   "author": "sanze.li",
   "scripts": {
     "dev": "vuepress dev . --host \"localhost\"",
-    "build": "vuepress build .",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build .",
     "deploy": "bash deploy.sh"
+  },
+  "resolutions": {
+    "axios": "0.30.2"
   },
   "devDependencies": {
     "vuepress": "1.5.4",
